@@ -10,10 +10,18 @@ function muestra_oculta(id) {
       div.style.display = "none";
     }
 }
-
-    const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', () => {
     menu.classList.toggle('open');
 });
+function muestra_oculta(id) {
+  let element = document.getElementById(id);
+  if (element.style.display === "none") {
+      element.style.display = "flex"; // Or "block" depending on layout
+  } else {
+      element.style.display = "none";
+  }
+} 
+
